@@ -1,0 +1,136 @@
+/* Hero.css */
+
+/* Container principal do Hero */
+.quantum-hero {
+  position: relative;
+  padding: 80px 20px;
+  background: #0a0a0a;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Anéis orbitais decorativos */
+.hero-orbit .orbital-ring {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Conteúdo principal do Hero */
+.hero-container {
+  max-width: 1200px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Título e descrição */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Estatísticas */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.stat-orb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Botão principal do Hero */
+.cyber-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: #1a1a1a;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cyber-button:hover {
+  background: #00ffff;
+  color: #0a0a0a;
+}
+
+/* Dashboard holográfico */
+.holo-dashboard {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-frame {
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid #00ffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-widget {
+  background: rgba(0, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.widget-progress {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #00ffff var(--progress), rgba(255,255,255,0.1) 0%);
+}

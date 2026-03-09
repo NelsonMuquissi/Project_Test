@@ -1,0 +1,4 @@
+curl -X GET \
+  "http://localhost:3000/api/v1/reports/export/job/3593c580-423a-46a6-889a-8a974c2348b6" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3MjNkYmZmLTA3MWMtNDJjNy1hMzdmLTliNjg1NzE2M2JmOSIsImVtYWlsIjoidGVzdC1hY2NvdW50MDJAZW1haWwuY29tIiwiaWF0IjoxNzYzMTQ2NTcxLCJleHAiOjE3NjMxNTAxNzF9.iViSlqAkBMJJH3vP9paN8LxobD_GwlubJfhoBgM1GHY" \
+  --output relatorio_final.csv

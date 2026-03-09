@@ -1,0 +1,3 @@
+curl -X POST \
+  http://localhost:3000/api/v1/reconciliations/job/3593c580-423a-46a6-889a-8a974c2348b6/process \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3MjNkYmZmLTA3MWMtNDJjNy1hMzdmLTliNjg1NzE2M2JmOSIsImVtYWlsIjoidGVzdC1hY2NvdW50MDJAZW1haWwuY29tIiwiaWF0IjoxNzYzMTQzMjI5LCJleHAiOjE3NjMxNDY4Mjl9.pbYYPOSdxFns038Rr-YHcfBX6EOFovJ87Z6kLrsZW1o"

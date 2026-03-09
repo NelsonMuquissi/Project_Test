@@ -1,0 +1,1 @@
+curl -X GET http://localhost:3000/api/v1/companies/d3b7928f-2d64-4e5e-bd83-3bb6585225a2/users -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3MjNkYmZmLTA3MWMtNDJjNy1hMzdmLTliNjg1NzE2M2JmOSIsImVtYWlsIjoidGVzdC1hY2NvdW50MDJAZW1haWwuY29tIiwiaWF0IjoxNzYzMTQ3ODQ5LCJleHAiOjE3NjMxNTE0NDl9.FBZu4mW8pW42fRVtFkEn95XoMnHVF9OQlmrNNiA8qYA"

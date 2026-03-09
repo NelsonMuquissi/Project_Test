@@ -1,0 +1,9 @@
+curl -X POST \
+  http://localhost:3000/api/v1/companies/register \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3MjNkYmZmLTA3MWMtNDJjNy1hMzdmLTliNjg1NzE2M2JmOSIsImVtYWlsIjoidGVzdC1hY2NvdW50MDJAZW1haWwuY29tIiwiaWF0IjoxNzYzMTMyNjk0LCJleHAiOjE3NjMxMzYyOTR9.g7OYpDheR711rejTVktEL-4K9PgxpLyWeJdiwHWFBhk" \
+  -d '{
+    "name": "Minha Primeira Empresa",
+    "nif": "500100200",
+    "defaultCurrency": "AOA"
+  }'

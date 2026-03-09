@@ -1,0 +1,66 @@
+identifier,asset_type,instruction,eligible_for_bounty,eligible_for_submission,availability_requirement,confidentiality_requirement,integrity_requirement,max_severity,system_tags,created_at,updated_at
+"scrollkit.com,*.scrollkit.com",WILDCARD,"",false,false,,,,critical,,2018-01-31 16:37:57 UTC,2023-05-15 16:31:51 UTC
+"learnboost.com,*.learnboost.com",WILDCARD,"",false,false,,,,critical,,2019-05-21 10:07:53 UTC,2023-05-15 16:33:40 UTC
+*/xmlrpc.php,OTHER,"The sole presence of `xmlrpc.php` in `wordpress.com` and all the domains hosted under our platform doesn't constitute a vulnerability. If you report an issue related to this file, please make sure to provide a working proof of concept that clearly shows the impact.",false,false,,,,critical,,2019-07-22 16:11:07 UTC,2019-07-22 16:11:07 UTC
+api.tumblr.com,URL,"",true,true,high,high,high,critical,,2020-01-09 18:07:23 UTC,2020-01-15 15:19:55 UTC
+safe.tumblr.com,URL,"",true,true,high,high,high,critical,,2020-01-09 18:08:00 UTC,2020-01-09 18:08:00 UTC
+secure.tumblr.com,URL,"",true,true,high,high,high,critical,,2020-01-09 18:08:19 UTC,2020-01-09 18:08:19 UTC
+assets.tumblr.com,URL,"",true,true,high,high,high,critical,,2020-01-09 18:08:33 UTC,2020-01-09 18:08:33 UTC
+embed.tumblr.com,URL,"",true,true,high,high,high,critical,,2020-01-09 18:08:45 UTC,2020-01-09 18:08:45 UTC
+*.tumblr.com,WILDCARD,"**The Blog Network**
+
+*Note: Blogs are cached for 1 minute after first request (60s from first request); content is re-loaded into cache when a new request is submitted after the 61st second.*
+
+How to identify you are looking at the Blog Network:
+* Header: `X-tumblr-user` can be used to identify if the domain is a blog on the Blog Network
+* View the domain in a browser, there will be a Tumblr banner visible. 
+
+Exclusions for this asset:
+* JavaScript is allowed; XSS is excluded from eligibility.
+* Pages can be framed; Clickjacking or other X-Frame-Options attacks are excluded from eligibility.",true,true,high,high,high,critical,,2020-01-09 18:09:03 UTC,2023-05-15 16:34:49 UTC
+www.tumblr.com,URL,"",true,true,high,high,high,critical,,2020-01-09 18:09:16 UTC,2020-01-09 18:09:16 UTC
+t.umblr.com,URL,"",true,true,high,high,high,critical,,2020-01-09 18:09:28 UTC,2020-01-09 18:09:28 UTC
+*.srvcs.tumblr.com,WILDCARD,"",true,true,high,high,high,critical,,2020-01-09 18:09:42 UTC,2023-05-15 16:34:49 UTC
+*.txmblr.com,WILDCARD,"",false,false,high,high,high,critical,,2020-01-09 18:09:52 UTC,2023-05-15 16:34:49 UTC
+com.tumblr,GOOGLE_PLAY_APP_ID,"- Minimum OS version: API 21
+
+Exclusions:
+- API keys in code
+- Certificate pinning",true,true,low,medium,low,high,,2020-01-09 18:10:16 UTC,2020-01-09 18:10:16 UTC
+com.tumblr.tumblr,APPLE_STORE_APP_ID,"- Minimum OS version: iOS 11
+
+Exclusions:
+- API keys in code
+- Certificate pinning",true,true,low,medium,low,high,,2020-01-09 18:10:36 UTC,2020-01-09 18:10:36 UTC
+"afterthedeadline.com,*.afterthedeadline.com",WILDCARD,"",false,false,,,,critical,,2020-04-27 15:22:59 UTC,2023-05-15 16:35:29 UTC
+"polishmywriting.com,*.polishmywriting.com",WILDCARD,"",false,false,,,,critical,,2020-04-27 15:24:16 UTC,2023-05-15 16:35:29 UTC
+*.survey.fm,WILDCARD,"This cookieless domain contains user generated content. While we might decide to fix XSS issues, reports for this domain will not be eligible for a bounty.",false,false,,,,critical,,2020-11-20 11:02:43 UTC,2023-05-15 16:36:41 UTC
+*.poll.fm,WILDCARD,"This cookieless domain contains user generated content. While we might decide to fix XSS issues, reports for this domain will not be eligible for a bounty.",false,false,,,,critical,,2020-11-20 12:26:03 UTC,2023-05-15 16:36:41 UTC
+wordpress.com,URL,"",true,true,high,high,high,critical,,2020-12-30 21:29:03 UTC,2020-12-30 21:30:56 UTC
+intensedebate.com,URL,"",true,true,low,low,low,medium,,2020-12-31 10:52:08 UTC,2020-12-31 10:52:08 UTC
+simplenote.com,URL,"",true,true,low,medium,low,high,,2020-12-31 10:55:03 UTC,2020-12-31 10:55:03 UTC
+simperium.com,URL,"",true,true,low,medium,low,high,,2021-01-04 14:21:10 UTC,2021-01-04 14:21:10 UTC
+Jetpack,SOURCE_CODE,Any issues related to the Jetpack plugin https://github.com/Automattic/jetpack and/or https://jetpack.com/,true,true,,,,critical,,2021-01-04 14:23:58 UTC,2021-01-04 14:23:58 UTC
+WooCommerce,OTHER,Any security issues on the WordPress WooCommerce plugin (https://wordpress.org/plugins/woocommerce/) and/or https://woocommerce.com/,true,true,,medium,,critical,,2021-01-04 14:28:59 UTC,2021-01-04 14:28:59 UTC
+Crowdsignal,OTHER,"Any issues on https://crowdsignal.com/, and or Crowdsignal WordPress plugins",true,true,medium,,medium,critical,,2021-01-08 09:08:23 UTC,2021-01-08 09:08:23 UTC
+atavist.com,URL,"",false,false,low,low,low,medium,,2021-01-22 08:28:04 UTC,2021-03-08 07:54:33 UTC
+WordPress Plugins & Themes,OTHER,"Any security issue found on any WordPress plugin or theme that's **maintained/created by Automattic**.
+
+This includes but is not limited to
+- WP-Supercache (https://wordpress.org/plugins/wp-super-cache/)
+- WP-Job-Manager (https://github.com/Automattic/WP-Job-Manager)
+- Sensei LMS (https://github.com/Automattic/sensei)
+
+See https://profiles.wordpress.org/automattic/ for more details",true,true,,,medium,critical,,2021-01-27 19:55:28 UTC,2021-01-27 19:55:28 UTC
+akismet.com,URL,"Any issues on https://akismet.com/, or the Akismet WordPress plugin.",true,true,,high,,critical,,2021-02-04 09:24:38 UTC,2021-02-04 09:24:38 UTC
+mailpoet.com,URL,"Any issue in https://www.mailpoet.com/, or the MailPoet WordPress plugin.",true,true,,,medium,critical,,2021-02-04 09:27:25 UTC,2021-02-04 09:27:25 UTC
+happy.tools,URL,"",false,false,low,low,low,medium,,2021-02-04 09:28:37 UTC,2024-11-14 21:38:25 UTC
+my.pressable.com,URL,"",true,true,high,high,high,critical,,2021-07-01 05:57:20 UTC,2021-07-01 05:58:02 UTC
+try.pressable.com,URL,This is only a demo site. Security issues that don't affect the integrity of `my.pressable.com` or `pressable.com` will most likely be closed as `N/A`.,false,false,,,,critical,,2022-05-19 11:48:47 UTC,2022-05-19 11:48:47 UTC
+*.crowdsignal.net,WILDCARD,"This cookieless domain contains user generated content. While we might decide to fix XSS issues, reports for this domain will not be eligible for a bounty.",false,false,,,,critical,,2023-03-15 13:23:49 UTC,2023-05-15 16:39:38 UTC
+gravatar.com,URL,"",true,true,,,,high,,2023-11-06 15:16:27 UTC,2023-11-06 15:16:27 UTC
+Texts,OTHER,Texts apps (texts.com) across all the available platforms are included.,true,true,,,,high,,2025-01-27 17:20:59 UTC,2025-01-27 17:21:45 UTC
+Beeper,OTHER,Beeper apps across all the available platforms are eligible.,true,true,,,,high,,2025-01-27 17:22:15 UTC,2025-01-27 17:22:15 UTC
+WordPress VIP,OTHER,"Any issue in the WordPress VIP infrastructure, WordPress plugins, or client sites.",true,true,high,high,high,critical,,2025-05-06 15:43:43 UTC,2025-05-06 15:43:43 UTC
+com.clay.ios,APPLE_STORE_APP_ID,Clay: Contacts + CRM (iOS app).,true,true,,,,high,,2025-07-25 19:51:05 UTC,2025-07-25 19:53:31 UTC
+clay.earth,URL,"",true,true,,,,high,,2025-07-25 19:55:46 UTC,2025-07-25 19:55:46 UTC

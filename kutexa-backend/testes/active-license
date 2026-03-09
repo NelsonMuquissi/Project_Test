@@ -1,0 +1,7 @@
+curl -X POST \
+  http://localhost:3000/api/v1/licenses/activate \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3MjNkYmZmLTA3MWMtNDJjNy1hMzdmLTliNjg1NzE2M2JmOSIsImVtYWlsIjoidGVzdC1hY2NvdW50MDJAZW1haWwuY29tIiwiaWF0IjoxNzYzMTMwNjAzLCJleHAiOjE3NjMxMzQyMDN9.2FoLJo9q8DKXI_l5PJQqXQpf8f043-vriYLVkGRNLkM" \
+  -d '{
+    "licenseKey": "KUTEXA-PRO-TESTE-2025"
+  }'

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Apple-inspired Color Palette */
+  --system-bg: #f5f5f7;
+  --system-card-bg: rgba(255, 255, 255, 0.7);
+  --system-sidebar-bg: #1d1d1f;
+  --system-accent: #0071e3;
+  --system-accent-hover: #0077ed;
+  --system-text: #1d1d1f;
+  --system-text-secondary: #86868b;
+  --system-border: rgba(0, 0, 0, 0.1);
+  --system-error: #ff3b30;
+  --system-success: #34c759;
+  --system-warning: #ff9f0a;
+
+  /* Layout & Effects */
+  --sidebar-width: 250px;
+  --border-radius: 12px;
+  --glass-blur: 20px;
+  --shadow-subtle: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--system-bg);
+  color: var(--system-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
+
+/* Global Transition */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Reusable Classes */
+.glass-effect {
+  background: var(--system-card-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--system-border);
+}
+
+.apple-shadow {
+  box-shadow: var(--shadow-subtle);
+}
+
+.apple-shadow:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-primary {
+  background-color: var(--system-accent);
+  color: white;
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--system-accent-hover);
+}

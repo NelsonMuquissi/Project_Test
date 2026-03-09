@@ -1,0 +1,486 @@
+:root {
+    --primary: #14532D;
+    --accent: #C8A951;
+    --light: #F4F1EC;
+    --white: #FFFFFF;
+    --dark-bg: #0A2918;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--white);
+    color: #333;
+}
+
+.reconciliation-container {
+    padding: 2rem;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.upload-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.upload-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--light);
+    transition: all 0.3s ease;
+}
+
+.upload-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.upload-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.upload-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--dark-bg) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.upload-header h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+.reconcilia-filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  padding: 16px;
+  background: #111827;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+.reconcilia-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reconcilia-label {
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.reconcilia-select,
+.reconcilia-date {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background: #1f2937;
+  color: #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.reconcilia-select:hover,
+.reconcilia-date:hover,
+.reconcilia-select:focus,
+.reconcilia-date:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+.reconcilia-select option {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.upload-area {
+    border: 2px dashed rgba(200, 169, 81, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: rgba(244, 241, 236, 0.1);
+}
+
+.upload-area:hover {
+    border-color: var(--accent);
+    background: rgba(200, 169, 81, 0.05);
+}
+
+.upload-area.dragover {
+    border-color: var(--accent);
+    background: rgba(200, 169, 81, 0.1);
+}
+
+.upload-icon-large {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.upload-text h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.upload-text p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.file-types {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.file-type-tag {
+    background: rgba(20, 83, 45, 0.1);
+    color: var(--primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.upload-btn {
+    background: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(200, 169, 81, 0.3);
+}
+
+.files-list {
+    margin-top: 1.5rem;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.file-item:hover {
+    background: rgba(200, 169, 81, 0.1);
+}
+
+.file-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.file-info {
+    flex: 1;
+}
+
+.file-name {
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+
+.file-size {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.file-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.file-action-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+}
+
+.file-action-btn:hover {
+    color: var(--accent);
+}
+
+.process-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.process-btn {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--dark-bg) 100%);
+    color: var(--white);
+    border: none;
+    padding: 1.2rem 3rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(20, 83, 45, 0.3);
+}
+
+.process-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(20, 83, 45, 0.4);
+}
+
+.process-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+/* =========================
+   CADASTRO DE EMPRESAS
+   ========================= */
+
+.reconciliation-container-empresa {
+  min-height: 100vh;
+  padding: 30px;
+  background: #0b0e13;
+  color: #e5e7eb;
+}
+
+.page-header-empresa {
+  margin-bottom: 30px;
+}
+
+.page-header-empresa h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.page-header-empresa p {
+  color: #9ca3af;
+}
+
+/* Card principal */
+.register-card-empresa {
+  background: #111827;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+/* Logo */
+.logo-empresa {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-subtitle-empresa {
+  color: #9ca3af;
+  font-size: 14px;
+}
+ 
+.upload-section-empresa {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.upload-card-empresa {
+  background: #020617;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+}
+
+.upload-header-empresa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.upload-icon-empresa {
+  background: #c8a951;
+  color: #020617;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-area-empresa {
+  padding: 20px;
+}
+
+/* Form */
+.form-grid-empresa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.form-group-empresa label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.input-with-icon-empresa input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.input-with-icon-empresa input:focus {
+  outline: none;
+  border-color: #c8a951;
+  box-shadow: 0 0 0 3px rgba(200,169,81,.15);
+}
+
+/* Bank accounts */
+.bank-accounts-header-empresa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.upload-btn-empresa {
+  background: #c8a951;
+  color: #020617;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.upload-btn-empresa:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.bank-account-item-empresa {
+  position: relative;
+  background: #0b1220;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 15px;
+}
+
+.account-fields-empresa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.file-action-btn-empresa {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Process */
+.process-section-empresa {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.process-btn-empresa {
+  background: linear-gradient(135deg, #c8a951, #f5d76e);
+  color: #020617;
+  padding: 16px 26px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.process-btn-empresa:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* Messages */
+.max-accounts-message-empresa {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #f59e0b;
+}
+
+/* Security */
+.security-notice-empresa {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}

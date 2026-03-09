@@ -1,0 +1,8 @@
+"data_transacao","descricao","valor","tipo","origem","status_final","id_match","confianca_match","status_match"
+"2025-11-05T00:00:00.000Z","PAGAMENTO DE SALARIO","5000.00","debit","bank_statement","unreconciled","N/A","N/A","N/A"
+"2025-11-15T00:00:00.000Z","COMPRA ONLINE","75.20","debit","bank_statement","unreconciled","N/A","N/A","N/A"
+"2025-11-18T00:00:00.000Z","REEMBOLSO DESPESA X","150.00","credit","erp_ledger","unreconciled","N/A","N/A","N/A"
+"2025-11-10T00:00:00.000Z","DEPOSITO CLIENTE A","1200.50","credit","bank_statement","reconciled","472a1053-bbe5-4659-8fec-85b7c16cf6af","high","confirmed"
+"2025-11-10T00:00:00.000Z","RECEBIMENTO CLIENTE A","1200.50","credit","erp_ledger","reconciled","472a1053-bbe5-4659-8fec-85b7c16cf6af","high","confirmed"
+"2025-11-12T00:00:00.000Z","PAGAMENTO FORNECEDOR B","350.00","debit","bank_statement","unreconciled","c418dfad-f2cd-48f9-9c9d-c53519745ad8","medium","rejected"
+"2025-11-13T00:00:00.000Z","PAGTO FORNECEDOR B","350.00","debit","erp_ledger","unreconciled","c418dfad-f2cd-48f9-9c9d-c53519745ad8","medium","rejected"

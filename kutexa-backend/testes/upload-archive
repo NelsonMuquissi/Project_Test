@@ -1,0 +1,7 @@
+curl -X POST \
+  http://localhost:3000/api/v1/reconciliations/upload \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3MjNkYmZmLTA3MWMtNDJjNy1hMzdmLTliNjg1NzE2M2JmOSIsImVtYWlsIjoidGVzdC1hY2NvdW50MDJAZW1haWwuY29tIiwiaWF0IjoxNzYzMTQzMjI5LCJleHAiOjE3NjMxNDY4Mjl9.pbYYPOSdxFns038Rr-YHcfBX6EOFovJ87Z6kLrsZW1o" \
+  -F "companyId="d3b7928f-2d64-4e5e-bd83-3bb6585225a2 \
+  -F "periodStart=2025-11-01" \
+  -F "periodEnd=2025-11-30" \
+  -F "files=@/home/catala/Downloads/exemplo.csv"
